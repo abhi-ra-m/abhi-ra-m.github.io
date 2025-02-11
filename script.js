@@ -13,6 +13,11 @@ const observer = new IntersectionObserver((entries) => {
   const hiddenElements = document.getElementsByClassName("hidden");
   Array.from(hiddenElements).forEach((el) => observer.observe(el));
   
+  const hiddenRightElements = document.getElementsByClassName("hiddenRight");
+  Array.from(hiddenRightElements).forEach((el) => observer.observe(el));
+
+  const hiddenBottomElements = document.getElementsByClassName("hiddenBottom");
+  Array.from(hiddenBottomElements).forEach((el) => observer.observe(el));
 
   const customCursor = document.getElementById('custom-cursor');
 const fakeSection = document.querySelector('.fake');
