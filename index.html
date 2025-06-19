@@ -2,193 +2,349 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=League+Gothic&family=Macondo+Swash+Caps&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=The+Nautigal:wght@400;700&display=swap"
-		rel="stylesheet">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Faculty+Glyphic&family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=League+Gothic&family=Macondo+Swash+Caps&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=The+Nautigal:wght@400;700&display=swap"
-		rel="stylesheet">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-		integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhiram Ratheesh | UI/UX Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+  <style>
+    .bg {
+      margin: 0;
+      background: #11071F;
+      overflow: hidden;
+      z-index: -999;
+    }
+
+    .sphere {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: #D626FE;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.5;
+    }
+
+    .sphere1 {
+      animation: float1 40s linear infinite;
+    }
+
+
+    .sphere2 {
+      bottom: 10%;
+      right: 25%;
+      animation: float2 40s linear infinite;
+    }
+
+    .sphere3 {
+      top: 30%;
+      right: 10%;
+      animation: float3 50s linear infinite;
+    }
+
+    @keyframes float1 {
+      0% {
+        transform: translate(0px, 0px);
+      }
+
+      20% {
+        transform: translate(500px, -100px);
+      }
+
+      40% {
+        transform: translate(500px, 500px);
+      }
+
+      60% {
+        transform: translate(800px, -100px);
+      }
+
+      80% {
+        transform: translate(200px, 200px);
+      }
+
+      100% {
+        transform: translate(0px, 0px);
+      }
+    }
+
+
+    @keyframes float2 {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      20% {
+        transform: translate(-150px, 140px);
+      }
+
+      40% {
+        transform: translate(-150px, -500px);
+      }
+
+      60% {
+        transform: translate(500px, -500px);
+      }
+
+      80% {
+        transform: translate(-500px, 400px);
+      }
+
+      90% {
+        transform: translate(-500px, 100px);
+      }
+
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+
+    @keyframes float3 {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      20% {
+        transform: translate(-1200px, -300px);
+      }
+
+      40% {
+        transform: translate(100px, 300px);
+      }
+
+      60% {
+        transform: translate(-100px, -500px);
+      }
+
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+  </style>
 </head>
 
 <body>
-	<nav>
-		<a href="#projects" class="minProfile">
-			<img class="min" src="asset/Runway 2024-08-04T12_16_57.831Z Expand Image.jpg" alt="">
-			<h1>Projects</h1>
-		</a>
-		<a href="#contact" data-aos="zoom-in-left" style="transition: .5s; transition-delay: 1s;"
-			class="contact">Contact me<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<style>
-						.cls-1 {
-							fill: none;
-							stroke: #fff;
-							stroke-linecap: round;
-							stroke-linejoin: round;
-							stroke-width: 2px;
-						}
-					</style>
-				</defs>
-				<title />
-				<g id="arrow-right">
-					<line class="cls-1" x1="29.08" x2="3.08" y1="16" y2="16" />
-					<line class="cls-1" x1="29.08" x2="25.08" y1="16" y2="21" />
-					<line class="cls-1" x1="29.08" x2="25.08" y1="16" y2="11" />
-				</g>
-			</svg></a>
-	</nav>
-	<section class="sec-01">
-		<div class="profile">
-			<div data-aos="zoom-in-up" style="transition-duration: .5s;" class="pulse1"></div>
-			<div data-aos="zoom-in-up" style="transition-duration: .5s;" class="pulse2"></div>
-			<img data-aos="zoom-in-up" style="transition-duration: .5s;" class="secondimg"
-				src="asset/Runway_2024-08-04T12_16_57.831Z_Expand_Image-removebg-preview.png" alt="">
-			<div data-aos="zoom-in-up" style="transition-duration: .5s;" class="profilepicture">
-				<img src="asset/Runway 2024-08-04T12_16_57.831Z Expand Image.jpg" alt="">
-			</div>
-		</div>
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/Portfolio_profile.png" alt="Abhiram" />
+      <span>Abhiram Ratheesh</span>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#" class="hire-btn">HIRE ME</a>
+    </nav>
+  </header>
 
-		<h1 data-aos="zoom-out-down" style="transition-delay: .5s; transition-duration: .5s;">ABHIRAM RATHEESH</h1>
 
-	</section>
-	<section class="fake"></section>
-	<section class="sec-02">
-		<div class="cloud"></div>
-		<div class="cloud"></div>
-		<div class="cloud"></div>
-	</section>
-	<section class="sec-03">
-		<div data-aos="fade-zoom-in" style="transition-delay: .3s;" class="container">
-			<div class="wrapper-01">
-				<h1><span data-aos="slide-right" style="transition-delay: 1s;">Hi, I’m Abhiram, a front-</span>
-					<span data-aos="slide-right" style="transition-delay: 2s;">end and UI/UX</span>
-					<span data-aos="slide-right" style="transition-delay: 3s;">developer based in India.</span>
-				</h1>
-			</div>
-			<div class="wrapper-02">
-				<h1>I'm a fresher who has expertise in HTML, CSS, js, Adobe Photoshop, Illustrator and Figma. I work to
-					create intuitive and engaging digital
-					experiences.</h1>
-			</div>
-		</div>
-	</section>
-
-	<section class="sec-04">
-		<div class="container-01">
-			<div class="border-01"></div>
-			<div class="border-02"></div>
-		</div>
-		<div class="container-02">
-			<div class="wrapper-01">
-				<h1>I often work with -</h1>
-			</div>
-			<div class="wrapper-02">
-				<div class="hidden card"><img src="asset/html.png" alt=""></div>
-				<div class="hidden card"><img src="asset/css-file-format-with-brackets.png" alt=""></div>
-				<div class="hidden card"><img src="asset/developer.png"></div>
-			</div>
-			<div class="wrapper-03">
-				<div class="hidden card"><img src="asset/photoshop_1.png" alt=""></div>
-				<div class="hidden card"><img src="asset/illustrator_1.png" alt=""></div>
-				<div class="hidden card"><img src="asset/figma1.png" alt=""></div>
-			</div>
-		</div>
-	</section>
-
-	<div id="custom-cursor">
-		<span>Scroll</span>
-	</div>
+  <section class="bg">
+    <div class="sphere sphere1"></div>
+    <div class="sphere sphere2"></div>
+    <div class="sphere sphere3"></div>
+  </section>
 
 
 
-	<section id="projects" class="sec-05">
-		<div class="container">
-			<h1 class="heading">LATEST WORK</h1>
-			<div data-aos="fade-down" style="transition-delay: .3s;" class="wrapper">
-				<h1>MovieLand</h1>
-				<img src="asset/projects/MovieLand.png" alt="Movieland App Landing Page">
-				<a href="https://github.com/abhiram399/Simplefrontend/tree/81701986851a2f7fbd0cab81ea455f51dbe00ab0/MovieLand_MovieApp/my-app"
-					style="margin: 50px 0 0 0;">git-Source</a>
-				<p>A Movie Surfing App created with React. this is an app similar to Netflix ,you Can search the movies
-					and filter them. </p>
-			</div>
-			<div data-aos="fade-down" style="transition-delay: .3s;" class="wrapper">
-				<h1>Easy Rent</h1>
-				<img src="asset/projects/EasyRent.png" alt="Easy Rent Web Landing Page">
-				<a href="https://github.com/abhiram399/Simplefrontend/tree/ef6a530f10f71ed76d8e160cedca648691b1a8ca/EasyRent">git-Source</a>
-				<p> Easy Rent is a Website where userExperience is Prioritized, in this Website users Can Easily rent
-					Vehicles Without Any complications this Website also ha options to get the vehicle to even your
-					house. This Website is literally Easy to use as Even elderly find it easy.</p>
-			</div>
-			<div data-aos="fade-down" style="transition-delay: .3s;" class="wrapper">
-				<h1>Flexcart</h1>
-				<img src="asset/projects/flexCart.png" alt="E-commerce website Landing Page">
-				<a href="https://github.com/abhiram399/Simplefrontend/tree/81701986851a2f7fbd0cab81ea455f51dbe00ab0/web-page-application"
-					style="margin: 50px 0 0 0;">git-Source</a>
-				<p>a basic E-commerce website created with HTML, CSS, JAVASCRIPT, Bootstrap. </p>
-			</div>
-			<div data-aos="fade-down" style="transition-delay: .3s;" class="wrapper">
-				<h1>Task Creator</h1>
-				<img src="asset/projects/Task.png" alt="Task Creator App Landing Page">
-				<a href="https://github.com/abhiram399/Simplefrontend/tree/81701986851a2f7fbd0cab81ea455f51dbe00ab0/task-creating-vite-project"
-					style="margin: 50px 0 0 0;">git-Source</a>
-				<p>a basic Task Creating Website created with React. </p>
-			</div>
-		</div>
-	</section>
 
-	<footer id="contact">
-		<h1>GET IN TOUCH</h1>
-		<div class="wrapper-01">
-			<div style="transition-delay: .2s;" class="hidden container">
-				<a
-					href="https://www.linkedin.com/in/abhiram-ratheesh?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKBQuQ6s1R%2B27XCImUvXiZw%3D%3D">
-					<div class="card1"><img src="asset/linkedin1.png" alt="">
-						<p>Linkedin</p>
-					</div>
-				</a>
-			</div>
-			<div style="transition-delay: .2s;" class="hiddenBottom container">
-				<a href="https://www.behance.net/abhiramratheesh">
-					<div class="card1"><img src="asset/social.png" alt="">
-						<p>Behance</p>
-					</div>
-				</a>
-			</div>
-			<div style="transition-delay: .2s;" class="hiddenRight container">
-				<a href="mailto:abhiramratheesh.399@gmail.com">
-					<div class="card1"><img src="asset/gmail.png" alt="">
-						<p>Mail me</p>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="wrapper-02">
-			<div style="transition-delay: .3s;" class="hiddenBottom container">
-				<div class="card1"><img src="asset/telephone.png" alt="">
-					<p>+91 9895037231</p>
-				</div>
-			</div>
-		</div>
+  <section class="hero">
+    <h1>UI/UX Designer Focused on Creating<br />Meaningful User Experiences</h1>
+    <p>
+      I’m passionate about designing intuitive and visually engaging interfaces,<br />
+      with a strong focus on user needs, problem-solving, and continuous learning
+    </p>
+    <div class="buttons">
+      <a href="#" class="btn primary">Open for Work - Lets Talk</a>
+      <a href="#" class="btn secondary">See Projects I've worked on</a>
+    </div>
+  </section>
 
-	</footer>
+  <div class="myWorks">
+    <h1>My Works</h1>
+    <p>From wireframes to wow – here’s a collection of products I’ve designed, refined, and brought to life. Every
+      project is a blend of strategy, creativity, and seamless user experience.</p>
+  </div>
 
 
-	<!-- script sections here -->
-	<script defer src="script.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-		AOS.init();
-	</script>
+
+  <section class="projects">
+    <div class="project-card">
+      <div class="text">
+        <h2>Dream Space: Designing Homes, One Click at a Time</h2>
+        <p>
+          Crafted a user-centric furniture e-commerce platform focused on seamless discovery and purchase.
+          Enhanced navigation, visual hierarchy, and product presentation to inspire creativity and make
+          furnishing a home both intuitive and enjoyable.
+        </p>
+        <div class="dummyContainer">
+
+        </div>
+        <div class="dummybutton">
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="assets/Thubnail_Dream-scape.png" alt="Dream Space Project" />
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="text">
+        <h2>Rent Easy: Simplifying Car Rentals for Everyone</h2>
+        <p>
+          Designed a seamless car rental experience by mapping user pain points, streamlining the booking flow,
+          and crafting a clean, intuitive interface that makes renting a car as effortless as a few taps.
+        </p>
+        <div class="dummybutton">
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="assets/Thubnail_Rent-easy.png" alt="Rent Easy Project" />
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="text">
+        <h2>TaskFlow: Organizing Work, Simplifying Productivity</h2>
+        <p>
+          Designed a streamlined task management experience by focusing on clarity, prioritization, and ease of use.
+          Improved user flows for creating, tracking, and completing tasks — helping users stay focused and in
+          control of their workflow.
+        </p>
+        <div class="dummybutton">
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="assets/Thubnail_Task-flow.png" alt="TaskFlow Project" />
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="tech-stack">
+    <div class="tech-heading">
+      <h2>My Tech</h2>
+      <p>Tools I rely on to design, prototype, and bring ideas to life</p>
+    </div>
+    <div class="tech-grid">
+      <!-- Repeat for each tool -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="assets/figma.png" alt="Figma">
+          </div>
+          <div class="card-back">
+            <h3>Figma</h3>
+            <p>Powerful collaborative interface design tool. Ideal for prototyping, wireframing, and real-time team
+              work.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="assets/photoshop.png" alt="Photoshop">
+          </div>
+          <div class="card-back">
+            <h3>Photoshop</h3>
+            <p>Industry-standard tool for image editing, graphic design, and digital artistry. Great for pixel-perfect
+              visuals.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="assets/illustrator.png" alt="Illustrator">
+          </div>
+          <div class="card-back">
+            <h3>Illustrator</h3>
+            <p>Vector graphics editor used for creating logos, icons, and scalable illustrations with precision.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="assets/logos_adobe-xd.png" alt="Adobe XD">
+          </div>
+          <div class="card-back">
+            <h3>Adobe XD</h3>
+            <p>UX/UI tool for wireframing and interactive prototyping, with animation and component support.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="assets/premirepro.png" alt="Premiere Pro">
+          </div>
+          <div class="card-back">
+            <h3>Premiere Pro</h3>
+            <p>Video editing software for creating promotional content, walkthroughs, and dynamic visuals.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="assets/vscode.png" alt="VS Code">
+          </div>
+          <div class="card-back">
+            <h3>VS Code</h3>
+            <p>Lightweight yet powerful code editor for front-end development, extensions, and live previewing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about-section">
+
+    <div class="about-text">
+      <h2>More About Myself</h2>
+      <p>
+        I'm a UI/UX designer trained at Keltron, with a focus on creating clean, user-centered designs.
+        Currently working as a freelancer, I enjoy turning ideas into intuitive digital experiences
+        that are both functional and visually engaging.
+      </p>
+    </div>
+
+    <div class="contact-section">
+      <h2>Contact Me</h2>
+      <div class="contact-buttons">
+        <div class="dummyButton">
+          <a href="https://www.linkedin.com/in/abhiram-ratheesh" target="_blank" class="contact-btn">Linkedin ⟶</a>
+        </div>
+        <div class="dummyButton">
+          <a href="https://www.behance.net/abhiramratheesh" target="_blank" class="contact-btn">Behance ⟶</a>
+        </div>
+        <div class="dummyButton">
+          <a href="abhiramratheesh.399@gmail.com" class="contact-btn">Mail me ⟶</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="download">
+      <a href="your-resume.pdf" download class="download-btn">
+        Download my Resume <span class="arrow">↷</span>
+      </a>
+    </div>
+  </section>
+
+
+</body>
 
 </html>
