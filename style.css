@@ -449,3 +449,138 @@ nav a {
 	color: white;	
 	font-size: 2rem;
 }
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 3rem 1.5rem;
+    margin-bottom: 100px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .hero .buttons {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .myWorks h1,
+  .tech-heading h2,
+  .about-text h2,
+  .contact-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .myWorks p,
+  .about-text p,
+  .tech-stack p {
+    font-size: 1rem;
+    line-height: 2rem;
+    width: 95%;
+  }
+
+
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .project-card .image {
+    order: 1;
+    width: 100%;
+  }
+
+  .project-card .text {
+    order: 2;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .project-card .text h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-card .text p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-card .read-more {
+    order: 3;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+
+  .project-card .text h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-card .text p {
+    font-size: 0.95rem;
+  }
+
+  .card-inner {
+    width: 90%;
+    height: 340px;
+  }
+
+  .card {
+    margin: 1rem;
+  }
+
+  .about-section > * {
+    width: 95%;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+
+  .contact-btn {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .download-btn {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+
+  .download-btn .arrow {
+    font-size: 1.5rem;
+  }
+
+  .top {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .top a {
+    font-size: 1.5rem;
+  }
+}
