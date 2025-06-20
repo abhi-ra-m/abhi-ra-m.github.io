@@ -2,347 +2,367 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abhiram Ratheesh | UI/UX Designer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Abhiram Ratheesh | UI/UX Designer</title>
+	<link rel="stylesheet" href="style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 
-  <style>
-    .bg {
-      margin: 0;
-      background: #11071F;
-      overflow: hidden;
-      z-index: -999;
-    }
+	<style>
+		.bg {
+			margin: 0;
+			background: #11071F;
+			overflow: hidden;
+			z-index: -999;
+		}
 
-    .sphere {
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      background: #D626FE;
-      border-radius: 50%;
-      filter: blur(100px);
-      opacity: 0.5;
-    }
+		.sphere {
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			background: #D626FE;
+			border-radius: 50%;
+			filter: blur(100px);
+			opacity: 0.5;
+		}
 
-    .sphere1 {
-      animation: float1 40s linear infinite;
-    }
-
-
-    .sphere2 {
-      bottom: 10%;
-      right: 25%;
-      animation: float2 40s linear infinite;
-    }
-
-    .sphere3 {
-      top: 30%;
-      right: 10%;
-      animation: float3 50s linear infinite;
-    }
-
-    @keyframes float1 {
-      0% {
-        transform: translate(0px, 0px);
-      }
-
-      20% {
-        transform: translate(500px, -100px);
-      }
-
-      40% {
-        transform: translate(500px, 500px);
-      }
-
-      60% {
-        transform: translate(800px, -100px);
-      }
-
-      80% {
-        transform: translate(200px, 200px);
-      }
-
-      100% {
-        transform: translate(0px, 0px);
-      }
-    }
+		.sphere1 {
+			animation: float1 40s linear infinite;
+		}
 
 
-    @keyframes float2 {
-      0% {
-        transform: translate(0, 0);
-      }
+		.sphere2 {
+			bottom: 10%;
+			right: 25%;
+			animation: float2 40s linear infinite;
+		}
 
-      20% {
-        transform: translate(-150px, 140px);
-      }
+		.sphere3 {
+			top: 30%;
+			right: 10%;
+			animation: float3 50s linear infinite;
+		}
 
-      40% {
-        transform: translate(-150px, -500px);
-      }
+		@keyframes float1 {
+			0% {
+				transform: translate(0px, 0px);
+			}
 
-      60% {
-        transform: translate(500px, -500px);
-      }
+			20% {
+				transform: translate(500px, -100px);
+			}
 
-      80% {
-        transform: translate(-500px, 400px);
-      }
+			40% {
+				transform: translate(500px, 500px);
+			}
 
-      90% {
-        transform: translate(-500px, 100px);
-      }
+			60% {
+				transform: translate(800px, -100px);
+			}
 
-      100% {
-        transform: translate(0, 0);
-      }
-    }
+			80% {
+				transform: translate(200px, 200px);
+			}
 
-    @keyframes float3 {
-      0% {
-        transform: translate(0, 0);
-      }
+			100% {
+				transform: translate(0px, 0px);
+			}
+		}
 
-      20% {
-        transform: translate(-1200px, -300px);
-      }
 
-      40% {
-        transform: translate(100px, 300px);
-      }
+		@keyframes float2 {
+			0% {
+				transform: translate(0, 0);
+			}
 
-      60% {
-        transform: translate(-100px, -500px);
-      }
+			20% {
+				transform: translate(-150px, 140px);
+			}
 
-      100% {
-        transform: translate(0, 0);
-      }
-    }
-  </style>
+			40% {
+				transform: translate(-150px, -500px);
+			}
+
+			60% {
+				transform: translate(500px, -500px);
+			}
+
+			80% {
+				transform: translate(-500px, 400px);
+			}
+
+			90% {
+				transform: translate(-500px, 100px);
+			}
+
+			100% {
+				transform: translate(0, 0);
+			}
+		}
+
+		@keyframes float3 {
+			0% {
+				transform: translate(0, 0);
+			}
+
+			20% {
+				transform: translate(-1200px, -300px);
+			}
+
+			40% {
+				transform: translate(100px, 300px);
+			}
+
+			60% {
+				transform: translate(-100px, -500px);
+			}
+
+			100% {
+				transform: translate(0, 0);
+			}
+		}
+	</style>
 </head>
 
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <img src="assets/Portfolio_profile.png" alt="Abhiram" />
-      <span>Abhiram Ratheesh</span>
-    </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="#" class="hire-btn">HIRE ME</a>
-    </nav>
-  </header>
+	<header class="navbar" id="navbar" data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease">
+		<div class="logo">
+			<img src="assets/Portfolio_profile.png" alt="Abhiram" />
+			<span>Abhiram Ratheesh</span>
+		</div>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Projects</a>
+			<a href="#" class="hire-btn">HIRE ME</a>
+		</nav>
+	</header>
 
 
-  <section class="bg">
-    <div class="sphere sphere1"></div>
-    <div class="sphere sphere2"></div>
-    <div class="sphere sphere3"></div>
-  </section>
-
-
-
-
-  <section class="hero">
-    <h1>UI/UX Designer Focused on Creating<br />Meaningful User Experiences</h1>
-    <p>
-      I’m passionate about designing intuitive and visually engaging interfaces,<br />
-      with a strong focus on user needs, problem-solving, and continuous learning
-    </p>
-    <div class="buttons">
-      <a href="#" class="btn primary">Open for Work - Lets Talk</a>
-      <a href="#" class="btn secondary">See Projects I've worked on</a>
-    </div>
-  </section>
-
-  <div class="myWorks">
-    <h1>My Works</h1>
-    <p>From wireframes to wow – here’s a collection of products I’ve designed, refined, and brought to life. Every
-      project is a blend of strategy, creativity, and seamless user experience.</p>
-  </div>
-
-
-
-  <section class="projects">
-    <div class="project-card">
-      <div class="text">
-        <h2>Dream Space: Designing Homes, One Click at a Time</h2>
-        <p>
-          Crafted a user-centric furniture e-commerce platform focused on seamless discovery and purchase.
-          Enhanced navigation, visual hierarchy, and product presentation to inspire creativity and make
-          furnishing a home both intuitive and enjoyable.
-        </p>
-        <div class="dummyContainer">
-
-        </div>
-        <div class="dummybutton">
-          <a href="#" class="read-more">Read More</a>
-        </div>
-      </div>
-      <div class="image">
-        <img src="assets/Thubnail_Dream-scape.png" alt="Dream Space Project" />
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="text">
-        <h2>Rent Easy: Simplifying Car Rentals for Everyone</h2>
-        <p>
-          Designed a seamless car rental experience by mapping user pain points, streamlining the booking flow,
-          and crafting a clean, intuitive interface that makes renting a car as effortless as a few taps.
-        </p>
-        <div class="dummybutton">
-          <a href="#" class="read-more">Read More</a>
-        </div>
-      </div>
-      <div class="image">
-        <img src="assets/Thubnail_Rent-easy.png" alt="Rent Easy Project" />
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="text">
-        <h2>TaskFlow: Organizing Work, Simplifying Productivity</h2>
-        <p>
-          Designed a streamlined task management experience by focusing on clarity, prioritization, and ease of use.
-          Improved user flows for creating, tracking, and completing tasks — helping users stay focused and in
-          control of their workflow.
-        </p>
-        <div class="dummybutton">
-          <a href="#" class="read-more">Read More</a>
-        </div>
-      </div>
-      <div class="image">
-        <img src="assets/Thubnail_Task-flow.png" alt="TaskFlow Project" />
-      </div>
-    </div>
-  </section>
+	<section class="bg">
+		<div class="sphere sphere1"></div>
+		<div class="sphere sphere2"></div>
+		<div class="sphere sphere3"></div>
+	</section>
 
 
 
 
-  <section class="tech-stack">
-    <div class="tech-heading">
-      <h2>My Tech</h2>
-      <p>Tools I rely on to design, prototype, and bring ideas to life</p>
-    </div>
-    <div class="tech-grid">
-      <!-- Repeat for each tool -->
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="assets/figma.png" alt="Figma">
-          </div>
-          <div class="card-back">
-            <h3>Figma</h3>
-            <p>Powerful collaborative interface design tool. Ideal for prototyping, wireframing, and real-time team
-              work.</p>
-          </div>
-        </div>
-      </div>
+	<section class="hero" id="hero" data-aos="fade" data-aos-duration="1500">
+		<h1>UI/UX Designer Focused on Creating<br />Meaningful User Experiences</h1>
+		<p>
+			I’m passionate about designing intuitive and visually engaging interfaces,<br />
+			with a strong focus on user needs, problem-solving, and continuous learning
+		</p>
+		<div class="buttons">
+			<a href="#" class="btn primary" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1500">Open for Work - Lets Talk</a>
+			<a href="#dream-space" class="btn secondary" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1500">See Projects I've worked on</a>
+		</div>
+	</section>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="assets/photoshop.png" alt="Photoshop">
-          </div>
-          <div class="card-back">
-            <h3>Photoshop</h3>
-            <p>Industry-standard tool for image editing, graphic design, and digital artistry. Great for pixel-perfect
-              visuals.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="assets/illustrator.png" alt="Illustrator">
-          </div>
-          <div class="card-back">
-            <h3>Illustrator</h3>
-            <p>Vector graphics editor used for creating logos, icons, and scalable illustrations with precision.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="assets/logos_adobe-xd.png" alt="Adobe XD">
-          </div>
-          <div class="card-back">
-            <h3>Adobe XD</h3>
-            <p>UX/UI tool for wireframing and interactive prototyping, with animation and component support.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="assets/premirepro.png" alt="Premiere Pro">
-          </div>
-          <div class="card-back">
-            <h3>Premiere Pro</h3>
-            <p>Video editing software for creating promotional content, walkthroughs, and dynamic visuals.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="assets/vscode.png" alt="VS Code">
-          </div>
-          <div class="card-back">
-            <h3>VS Code</h3>
-            <p>Lightweight yet powerful code editor for front-end development, extensions, and live previewing.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+	<div class="myWorks" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="800">
+		<h1>My Works</h1>
+		<p>From wireframes to wow – here’s a collection of products I’ve designed, refined, and brought to life. Every
+			project is a blend of strategy, creativity, and seamless user experience.</p>
+	</div>
 
 
-  <section class="about-section">
 
-    <div class="about-text">
-      <h2>More About Myself</h2>
-      <p>
-        I'm a UI/UX designer trained at Keltron, with a focus on creating clean, user-centered designs.
-        Currently working as a freelancer, I enjoy turning ideas into intuitive digital experiences
-        that are both functional and visually engaging.
-      </p>
-    </div>
+	<section class="projects" data-aos="fade-up" data-aos-duration="800">
+		<div class="project-card" data-aos="fade-up" data-aos-duration="800" id="dream-space">
+			<div class="text">
+				<h2>Dream Space: Designing Homes, One Click at a Time</h2>
+				<p>
+					Crafted a user-centric furniture e-commerce platform focused on seamless discovery and purchase.
+					Enhanced navigation, visual hierarchy, and product presentation to inspire creativity and make
+					furnishing a home both intuitive and enjoyable.
+				</p>
+				<div class="dummyContainer">
 
-    <div class="contact-section">
-      <h2>Contact Me</h2>
-      <div class="contact-buttons">
-        <div class="dummyButton">
-          <a href="https://www.linkedin.com/in/abhiram-ratheesh" target="_blank" class="contact-btn">Linkedin ⟶</a>
-        </div>
-        <div class="dummyButton">
-          <a href="https://www.behance.net/abhiramratheesh" target="_blank" class="contact-btn">Behance ⟶</a>
-        </div>
-        <div class="dummyButton">
-          <a href="abhiramratheesh.399@gmail.com" class="contact-btn">Mail me ⟶</a>
-        </div>
-      </div>
-    </div>
+				</div>
+				<div class="dummybutton">
+					<a href="https://www.behance.net/gallery/223380717/Dream-Space-Furniture-E-commerce-Website-UIUX-Design" target="_blank" class="read-more">Read More</a>
+				</div>
+			</div>
+			<div class="image">
+				<img src="assets/Thubnail_Dream-scape.png" alt="Dream Space Project" />
+			</div>
+		</div>
 
-    <div class="download">
-      <a href="your-resume.pdf" download class="download-btn">
-        Download my Resume <span class="arrow">↷</span>
-      </a>
-    </div>
-  </section>
+		<div class="project-card" data-aos="fade-up" data-aos-duration="800">
+			<div class="text">
+				<h2>Rent Easy: Simplifying Car Rentals for Everyone</h2>
+				<p>
+					Designed a seamless car rental experience by mapping user pain points, streamlining the booking
+					flow,
+					and crafting a clean, intuitive interface that makes renting a car as effortless as a few taps.
+				</p>
+				<div class="dummybutton">
+					<a href="https://www.behance.net/gallery/219259853/Rent-Easy" target="_blank" class="read-more">Read More</a>
+				</div>
+			</div>
+			<div class="image">
+				<img src="assets/Thubnail_Rent-easy.png" alt="Rent Easy Project" />
+			</div>
+		</div>
+
+		<div class="project-card" data-aos="fade-up" data-aos-duration="800">
+			<div class="text">
+				<h2>TaskFlow: Organizing Work, Simplifying Productivity</h2>
+				<p>
+					Designed a streamlined task management experience by focusing on clarity, prioritization, and ease
+					of use.
+					Improved user flows for creating, tracking, and completing tasks — helping users stay focused and in
+					control of their workflow.
+				</p>
+				<div class="dummybutton">
+					<a href="https://www.behance.net/gallery/223317377/TaskFlow-Smart-Task-Management-App-UIUX-Design" target="_blank" class="read-more">Read More</a>
+				</div>
+			</div>
+			<div class="image">
+				<img src="assets/Thubnail_Task-flow.png" alt="TaskFlow Project" />
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="tech-stack">
+		<div class="tech-heading">
+			<h2>My Tech</h2>
+			<p>Tools I rely on to design, prototype, and bring ideas to life</p>
+		</div>
+		<div class="tech-grid">
+			<!-- Repeat for each tool -->
+			<div class="card">
+				<div class="card-inner">
+					<div class="card-front">
+						<img src="assets/figma.png" alt="Figma">
+					</div>
+					<div class="card-back">
+						<h3>Figma</h3>
+						<p>Powerful collaborative interface design tool. Ideal for prototyping, wireframing, and
+							real-time team
+							work.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-inner">
+					<div class="card-front">
+						<img src="assets/photoshop.png" alt="Photoshop">
+					</div>
+					<div class="card-back">
+						<h3>Photoshop</h3>
+						<p>Industry-standard tool for image editing, graphic design, and digital artistry. Great for
+							pixel-perfect
+							visuals.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-inner">
+					<div class="card-front">
+						<img src="assets/illustrator.png" alt="Illustrator">
+					</div>
+					<div class="card-back">
+						<h3>Illustrator</h3>
+						<p>Vector graphics editor used for creating logos, icons, and scalable illustrations with
+							precision.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-inner">
+					<div class="card-front">
+						<img src="assets/logos_adobe-xd.png" alt="Adobe XD">
+					</div>
+					<div class="card-back">
+						<h3>Adobe XD</h3>
+						<p>UX/UI tool for wireframing and interactive prototyping, with animation and component support.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-inner">
+					<div class="card-front">
+						<img src="assets/premirepro.png" alt="Premiere Pro">
+					</div>
+					<div class="card-back">
+						<h3>Premiere Pro</h3>
+						<p>Video editing software for creating promotional content, walkthroughs, and dynamic visuals.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-inner">
+					<div class="card-front">
+						<img src="assets/vscode.png" alt="VS Code">
+					</div>
+					<div class="card-back">
+						<h3>VS Code</h3>
+						<p>Lightweight yet powerful code editor for front-end development, extensions, and live
+							previewing.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="about-section">
+
+		<div class="about-text">
+			<h2>More About Myself</h2>
+			<p>
+				<span data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0">I'm a UI/UX designer trained at Keltron, with a focus on</span><span data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"> creating clean, user-centered designs.
+				Currently working as</span><span data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200"> a freelancer, I enjoy turning ideas into intuitive digital</span><span data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1800"> experiences
+				that are both functional and visually engaging.</span>
+			</p>
+		</div>
+
+		<div class="contact-section" data-aos="fade-up">
+			<h2>Contact Me</h2>
+			<div class="contact-buttons">
+				<div class="dummyButton" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+					<a href="https://www.linkedin.com/in/abhiram-ratheesh" target="_blank" class="contact-btn">Linkedin
+						⟶</a>
+				</div>
+				<div class="dummyButton" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+					<a href="https://www.behance.net/abhiramratheesh" target="_blank" class="contact-btn">Behance ⟶</a>
+				</div>
+				<div class="dummyButton" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+					<a href="mailto:abhiramratheesh.399@gmail.com?subject=Hello%20Abhiram" class="contact-btn">
+						Mail me ⟶
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="download" data-aos="fade" data-aos-duration="800" data-aos-delay="1500">
+			<a href="https://drive.google.com/file/d/16jvpr9BJ80eLXoSL9Jqcj1FjcP5HXzCJ/view?usp=drivesdk"
+				target="_blank" download class="download-btn">
+				Download my Resume <span class="arrow">↷</span>
+			</a>
+		</div>
+	</section>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 
 
 </body>

@@ -321,6 +321,7 @@ nav a {
 
 
 .about-section {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -414,6 +415,7 @@ nav a {
 
 
 .download-btn {
+	
 	font-size: 1.5rem;
 	color: white;
 	text-decoration: none;
@@ -426,6 +428,24 @@ nav a {
 
 .download-btn .arrow {
 	display: inline-block;
-	transform: rotate(-45deg);
+	font-size: 2rem;
+}
+
+.top {
+	position: absolute;
+	bottom: 0;
+	font-size: 1.5rem;
+	color: white;
+	text-decoration: none;
+	align-items: right;
+	gap: 0.5rem;
+	margin-bottom: 2rem;
+	text-align: right;
+}
+
+.top a {
+	transition-duration: 800ms;
+	text-decoration: none;
+	color: white;	
 	font-size: 2rem;
 }
